@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="global_planer" type="global_planer.py" name="global_planer">
+        <param name="t_start" value="0" />
+        <param name="t_end"   value="20" />
+        <param name="x_start" value="0" />
+        <param name="x_end"   value="4" />
+        <param name="y_start" value="0" />
+        <param name="y_end"   value="2" />
+        <param name="num_waypoints"   value="100" />
+    </node>
+
+</launch>

@@ -1,0 +1,8 @@
+prefix=/home/ubuntu-1/yahboom/ROS/R2_simulation/devel
+
+Name: r2_model
+Description: Description of r2_model
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,9 @@
+# Client 
+float32 currentTime
+geometry_msgs/PoseStamped currentPose
+geometry_msgs/TwistStamped currentTwist
+---
+# Server
+geometry_msgs/PoseStamped targetPose
+geometry_msgs/TwistStamped targetTwist
+float32 kappa

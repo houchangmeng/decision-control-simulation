@@ -1,0 +1,8 @@
+prefix=/home/ubuntu-1/yahboom/ROS/R2_simulation/devel
+
+Name: styx_msgs
+Description: Description of styx_msgs
+Version: 0.0.0
+Cflags: -I/home/ubuntu-1/yahboom/ROS/R2_simulation/devel/include
+Libs: -L${prefix}/lib 
+Requires: geometry_msgs roscpp rospy sensor_msgs std_msgs

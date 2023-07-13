@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<launch>
+    <node name="path_tracking" pkg="path_tracking" type="path_tracking.py" respawn="false" output="screen"/>
+</launch>

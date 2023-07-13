@@ -1,0 +1,2 @@
+set(styx_msgs_MESSAGE_FILES "/home/ubuntu-1/yahboom/ROS/R2_simulation/src/styx_msgs/msg/TrafficLight.msg;/home/ubuntu-1/yahboom/ROS/R2_simulation/src/styx_msgs/msg/TrafficLightArray.msg;/home/ubuntu-1/yahboom/ROS/R2_simulation/src/styx_msgs/msg/Waypoint.msg;/home/ubuntu-1/yahboom/ROS/R2_simulation/src/styx_msgs/msg/Lane.msg")
+set(styx_msgs_SERVICE_FILES "/home/ubuntu-1/yahboom/ROS/R2_simulation/src/styx_msgs/srv/Nav.srv")

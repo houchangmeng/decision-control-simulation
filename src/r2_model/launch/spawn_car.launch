@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+	<include file="$(find r2_model)/launch/spawn_xacro.launch">
+
+		<arg name="x" value="0.0"/>
+		<arg name="y" value="0.0"/>
+		<arg name="z" value="0.2"/> <!-- Spawn height-->
+		<arg name="urdf_robot_file" value="$(find r2_model)/urdf/R2.xacro"/>
+		<arg name="robot_name" value="smart"/>
+
+	</include>
+
+	<include file="$(find r2_model)/launch/control.launch">
+		<arg name="robot_name" value="smart"/>
+		<arg name="config_file" value="smart_control_config.yaml"/>
+	</include>
+
+	
+	<node name="cmdvel2gazebo" pkg="r2_model" type="cmdvel2gazebo.py" respawn="true" output="screen">
+        <param name="axle_length" value="0.23214" />
+		<param name="axle_weight" value="0.16850" />
+		<param name="max_steer_angle" value="0.5" />
+		<param name="wheel_raduis" value="0.0125" />
+	</node> 
+
+  <node name="vehicle_pose_and_velocity_updater" pkg="r2_model" type="vehicle_pose_and_velocity_updater.py" respawn="true" output="screen"/> 
+	
+  <node name="transform_publisher" pkg="r2_model" type="transform_publisher.py" respawn="true" output="screen"/> 
+	
+	<include file="$(find global_planer)/launch/global_planer.launch"/>
+
+  <include file="$(find local_planer)/launch/local_planer.launch"/> 
+
+	<node pkg="rviz" type="rviz" name="rviz" required="true"
+          args="-d $(find r2_model)/rviz_config/smart.rviz" />
+
+</launch>
+
+<!-- 
+rosservice call /gazebo/set_model_state "model_state: model_name: 'smart'
+  pose:
+    position:
+      x: 0.0
+      y: 0.0
+      z: 0.2
+    orientation:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+      w: 0.0
+  twist:
+    linear:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+    angular:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+  reference_frame: 'world'" 
+ -->

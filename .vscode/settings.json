@@ -1,0 +1,6 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/opt/ros/noetic/lib/python3/dist-packages",
+        "/home/ubuntu-1/yahboom/ROS/R2_simulation/devel/lib/python3/dist-packages"
+    ]
+}

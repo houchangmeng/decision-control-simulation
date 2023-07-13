@@ -1,0 +1,2 @@
+global_planer:local_planer:path_tracking:r2_model:styx_msgs
+-DCMAKE_BUILD_TYPE=RelWithDebInfo -DCATKIN_DEVEL_PREFIX=/home/ubuntu-1/yahboom/ROS/R2_simulation/devel -DCMAKE_INSTALL_PREFIX=/home/ubuntu-1/yahboom/ROS/R2_simulation/install -G Unix Makefiles

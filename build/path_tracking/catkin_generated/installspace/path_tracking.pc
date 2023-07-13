@@ -1,0 +1,8 @@
+prefix=/home/ubuntu-1/yahboom/ROS/R2_simulation/install
+
+Name: path_tracking
+Description: Description of path_tracking
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
