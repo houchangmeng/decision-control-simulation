@@ -4,8 +4,8 @@ R2_simulation
 
 ## Algorithm
 
-Longtitude : Double PID
-Lateral: Stanley
+Longtitude : Double PID  
+Lateral: Stanley  
 CarURDF: [Yahboom](https://www.yahboom.com/study/ROSMASTER-R2)
 
 ## Experiment
