@@ -1,6 +1,6 @@
 # Autonomous vehicle decision and control simulation in ROS1
 
-R2_simulation
+Workspace name: R2_simulation
 
 ## Algorithm
 
